@@ -3,42 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
     <title>Document</title>
 </head>
 <body>
+<div class="arena">
 
-    <h1 class="titulo batalha">batalha</h1>
-    <br>
-    <h2>classes:guerreiro, Mago e arqueiro </h2>
-    <br>
+    <h2>⚒️ARENA DE BATALHA⚒️</h2>
+<div class="controles">
+<label>Escolha sua classe</label>
+<select id="classe">
 
-    <label for="herois">classes dos herois: </label>
-    <select name="herois" id="herois">
-    <option value="guerreiro" > guerreiro </option>
-    <option value="mago" > mago </option>
-    <option value="arqueiro" > arqueiro </option>
-    </select><br><br><br>
+    <option value="Guerreiro">Guerreiro</option>
+    <option value="Mago">Mago</option>
+    <option value="Arqueiro">Arqueiro</option>
+</select>
+<label>Equipe sua arma</label>
+<input type="text"id="Arma" placeholder="Ex: Espada, Cajado, Arco">
+<button onclick="lutar()">INICIAR O COMBATE</button>
+</div>
 
-
-
-
-    <label for="fname"> escolha uma arma para seu heroi:
-    <input type="text">
-    
-    </label>
-
-    <form action="/action_page.php">
-        <label for="fname">First name:</label>
-        <input type="text" id="fname" name="fname"><br><br>
-        <label for="lname">Last name:</label>
-        <input type="text" id="lname" name="lname"><br><br>
-        <input type="submit" value="Submit">
-      </form>
-      
-      <p>Click the "Submit" button and the form-data will be sent to a page on the 
-      server called "action_page.php".</p>
-      
+<div id="log">Aguardando desafiante...</div>
 
 
+
+
+
+</div>
+
+    <script src="batalha.js"></script>
 </body>
-</html>
