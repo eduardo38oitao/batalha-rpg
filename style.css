@@ -1,6 +1,7 @@
 body{
     background-color: black;
     color: #00f000;
+    display: flex;
     justify-content: center;
     padding: 20px;
 }
